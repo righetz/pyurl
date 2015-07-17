@@ -1,0 +1,55 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-07-17 15:43+CEST\n"
+"PO-Revision-Date: Fri Jul 17 2015 16:35:47 GMT+0200 (CEST)\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: Unknown\n"
+"Plural-Forms: nplurals=2; plural=n!=1\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=cp1252\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Loco-Source-Locale: it_IT\n"
+"Generated-By: pygettext.py 1.5\n"
+"X-Loco-Parser: loco_parse_po\n"
+"X-Loco-Target-Locale: zz_ZZ\n"
+"X-Generator: Loco - https://localise.biz/"
+
+#: pyurl.py:63
+#, c-format
+msgid ""
+"Could not resolve host %s\n"
+"Check your connection"
+msgstr ""
+"%s non raggiungibile\n"
+"Controlla la connessione\n"
+
+#: pyurl.py:83
+#, c-format
+msgid ""
+"Http code: %d\n"
+"\n"
+" "
+msgstr ""
+"Codice Http : %d\n"
+"\n"
+
+#: pyurl.py:103
+msgid "Specified directory does not exists"
+msgstr "La directory specificata non esiste"
+
+#: pyurl.py:105
+msgid "Target path is a directory, include file name"
+msgstr "Il percorso specificato è una directory, aggiungi il nome del file"
+
+#: pyurl.py:107
+msgid ""
+"Input/Output error\n"
+"Maybe you don't have enough privileges?"
+msgstr ""
+"Input/Output error\n"
+"\n"
+"Controlla di avere sufficienti permessi di scrittura sul file system"
