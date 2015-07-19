@@ -19,8 +19,8 @@ def main():
     parser.add_argument('-d', metavar='DATA', help='Http POST data between quotation marks')
     parser.add_argument('-c', action='store_true', help='Show Http code')
     parser.add_argument('-a', metavar='user_agent', help='Insert custom user agent')
-    print(parser.parse_args())
-    control(parser.parse_args())
+    flags = set_flags(parser.parse_args())
+    get_flags(flags)
 
 def language_set():
     """read from UNIX or windows locale informations and set language"""
@@ -31,26 +31,37 @@ def language_set():
     else:
         eng.install()
 
-def control(args):
-    """arguments control and methods invoke"""
+def set_flags(args):
+    """flags setting from namespace"""
+    flags = {}
+    flags['user_agent'] = args.a
+    flags['http_code'] = args.c
+    flags['http_post'] = args.d
+    flags['headers'] = args.i
+    flags['out_file'] = args.o
+    flags['url'] = args.url
+    return flags
+
+def get_flags(flags):
+    """flags control and methods invoke"""
     headers = ""
     post_data = None
-    url = str(args.url)
-    if args.d != None:
-        post_data = data_post_format(args.d)
+    url = str(flags['url'])
+    if flags['http_post'] != None:
+        post_data = data_post_format(flags['http_post'])
     if not re.match("http://", url):
         url = "http://" + url
-    text = get_source(url, post_data, args.c, args.a)
-    if args.i == True:
-        if args.o != None:
-            headers = get_headers(url, args.a)
-            save_to_file(text, args.o, headers)
+    text = get_source(url, post_data, flags['http_code'], flags['user_agent'])
+    if flags['headers'] == True:
+        if flags['out_file'] != None:
+            headers = get_headers(url, flags['user_agent'])
+            save_to_file(text, flags['out_file'], headers)
         else:
-            headers = get_headers(url, args.a)
+            headers = get_headers(url, flags['user_agent'])
             print(headers)
             print(text)
-    elif args.o != None:
-        save_to_file(text, args.o, headers)
+    elif flags['out_file'] != None:
+        save_to_file(text, flags['out_file'], headers)
     else:
         print(text)
 
@@ -79,7 +90,10 @@ def data_post_format(data_string):
     data_map = {}
     for dato in data_list:
         temp = dato.split("=")
-        data_map[temp[0]] = temp[1]
+        try:
+            data_map[temp[0]] = temp[1] #check if user input is correct
+        except IndexError:
+            sys.exit(_("Specify every POST input as \"key=value\" "))
     return urlencode(data_map)
 
 def get_source(url, post_data, http_code, user_agent):
