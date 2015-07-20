@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-07-17 15:43+CEST\n"
-"PO-Revision-Date: Fri Jul 17 2015 16:59:57 GMT+0200 (CEST)\n"
+"POT-Creation-Date: 2015-07-20 23:55+CEST\n"
+"PO-Revision-Date: Tue Jul 21 2015 00:07:10 GMT+0200 (CEST)\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: Unknown\n"
@@ -18,33 +18,68 @@ msgstr ""
 "X-Loco-Target-Locale: zz_ZZ\n"
 "X-Generator: Loco - https://localise.biz/"
 
-#: pyurl.py:63
+#: pyurl.py:16
+msgid "Write output to file"
+msgstr "Write output to file"
+
+#: pyurl.py:17
+msgid "Include request headers"
+msgstr "Include request headers"
+
+#: pyurl.py:18
+msgid "Define target URL"
+msgstr "Define target URL"
+
+#: pyurl.py:19
+msgid "Http POST data between quotation marks"
+msgstr "Http POST data between quotation marks"
+
+#: pyurl.py:20
+msgid "Show Http code"
+msgstr "Show Http code"
+
+#: pyurl.py:21
+msgid "Set custom user agent"
+msgstr "Set custom user agent"
+
+#: pyurl.py:22
+msgid "headers only"
+msgstr "Show request headers only (overrides [-i] option)"
+
+#: pyurl.py:73
 #, c-format
 msgid ""
 "Could not resolve host %s\n"
 "Check your connection"
 msgstr ""
+"Could not resolve host %s\n"
+"Check your connection\n"
 
-#: pyurl.py:83
+#: pyurl.py:85
+msgid "Specify every POST input as \"key=value\" "
+msgstr "Specify every POST input as \"key=value\""
+
+#: pyurl.py:96 pyurl.py:110
 #, c-format
 msgid ""
 "Http code: %d\n"
 "\n"
 " "
-msgstr ""
-"\n"
-"\n"
+msgstr "Http code: %d"
 
-#: pyurl.py:103
+#: pyurl.py:119
 msgid "Specified directory does not exists"
-msgstr ""
+msgstr "Specified directory does not exists"
 
-#: pyurl.py:105
+#: pyurl.py:121
 msgid "Target path is a directory, include file name"
-msgstr ""
+msgstr "Target path is a directory, include file name"
 
-#: pyurl.py:107
+#: pyurl.py:123
 msgid ""
 "Input/Output error\n"
 "Maybe you don't have enough privileges?"
 msgstr ""
+"Input/Output error\n"
+"\n"
+"Maybe you don't have enough privileges?\n"

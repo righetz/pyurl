@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-07-17 15:43+CEST\n"
-"PO-Revision-Date: Fri Jul 17 2015 16:35:47 GMT+0200 (CEST)\n"
+"POT-Creation-Date: 2015-07-20 23:55+CEST\n"
+"PO-Revision-Date: Tue Jul 21 2015 00:34:12 GMT+0200 (CEST)\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: Unknown\n"
@@ -18,7 +18,35 @@ msgstr ""
 "X-Loco-Target-Locale: zz_ZZ\n"
 "X-Generator: Loco - https://localise.biz/"
 
-#: pyurl.py:63
+#: pyurl.py:16
+msgid "Write output to file"
+msgstr "Scrive l'output nel file specificato\n"
+
+#: pyurl.py:17
+msgid "Include request headers"
+msgstr "Include gli headers della richiesta"
+
+#: pyurl.py:18
+msgid "Define target URL"
+msgstr "Definisce l'URL"
+
+#: pyurl.py:19
+msgid "Http POST data between quotation marks"
+msgstr "I dati Http POST vanno inseriti tra doppi apici\n"
+
+#: pyurl.py:20
+msgid "Show Http code"
+msgstr "Mostra il codice Http"
+
+#: pyurl.py:21
+msgid "Set custom user agent"
+msgstr "Specifica un user agent personalizzato"
+
+#: pyurl.py:22
+msgid "headers only"
+msgstr "Mostra solamente gli headers della richiesta (ignora l'opzione [-i])"
+
+#: pyurl.py:73
 #, c-format
 msgid ""
 "Could not resolve host %s\n"
@@ -27,29 +55,30 @@ msgstr ""
 "%s non raggiungibile\n"
 "Controlla la connessione\n"
 
-#: pyurl.py:83
+#: pyurl.py:85
+msgid "Specify every POST input as \"key=value\" "
+msgstr "Il formato dei dati POST e': \"chiave=valore\""
+
+#: pyurl.py:96 pyurl.py:110
 #, c-format
 msgid ""
 "Http code: %d\n"
 "\n"
 " "
-msgstr ""
-"Codice Http : %d\n"
-"\n"
+msgstr "Codice Http: %d"
 
-#: pyurl.py:103
+#: pyurl.py:119
 msgid "Specified directory does not exists"
-msgstr "La directory specificata non esiste"
+msgstr "La directory specificata non esiste\n"
 
-#: pyurl.py:105
+#: pyurl.py:121
 msgid "Target path is a directory, include file name"
-msgstr "Il percorso specificato è una directory, aggiungi il nome del file"
+msgstr "Il percorso specificato e' una directory, aggiungi il nome del file"
 
-#: pyurl.py:107
+#: pyurl.py:123
 msgid ""
 "Input/Output error\n"
 "Maybe you don't have enough privileges?"
 msgstr ""
-"Input/Output error\n"
-"\n"
-"Controlla di avere sufficienti permessi di scrittura sul file system"
+"Errore di Input/Output\n"
+"Controlla di avere sufficienti permessi di scrittura sul file system\n"
