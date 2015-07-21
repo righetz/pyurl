@@ -1,0 +1,87 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-07-20 23:55+CEST\n"
+"PO-Revision-Date: Tue Jul 21 2015 11:44:35 GMT+0200 (CEST)\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: Unknown\n"
+"Plural-Forms: nplurals=2; plural=n!=1\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=cp1252\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Loco-Source-Locale: it_IT\n"
+"Generated-By: pygettext.py 1.5\n"
+"X-Loco-Parser: loco_parse_po\n"
+"X-Loco-Target-Locale: zz_ZZ\n"
+"X-Generator: Loco - https://localise.biz/"
+
+#: pyurl.py:16
+msgid "Write output to file"
+msgstr "Write output to file"
+
+#: pyurl.py:17
+msgid "Include request headers"
+msgstr "Include request headers"
+
+#: pyurl.py:18
+msgid "Define target URL"
+msgstr "Define target URL"
+
+#: pyurl.py:19
+msgid "Http POST data between quotation marks"
+msgstr "Http POST data between quotation marks"
+
+#: pyurl.py:20
+msgid "Show Http code"
+msgstr "Show Http code"
+
+#: pyurl.py:21
+msgid "Set custom user agent"
+msgstr "Set custom user agent"
+
+#: pyurl.py:22
+msgid "headers only"
+msgstr "Show request headers only (overrides [-i] option)"
+
+#: pyurl.py:73
+#, c-format
+msgid ""
+"Could not resolve host %s\n"
+"Check your connection"
+msgstr ""
+"Could not resolve host %s\n"
+"Check your connection\n"
+
+#: pyurl.py:85
+msgid "Specify every POST input as \"key=value\" "
+msgstr "Specify every POST input as \"key=value\""
+
+#: pyurl.py:96 pyurl.py:110
+#, c-format
+msgid ""
+"Http code: %d\n"
+"\n"
+" "
+msgstr ""
+"Http code: %d\n"
+"\n"
+
+#: pyurl.py:119
+msgid "Specified directory does not exists"
+msgstr "Specified directory does not exists"
+
+#: pyurl.py:121
+msgid "Target path is a directory, include file name"
+msgstr "Target path is a directory, include file name"
+
+#: pyurl.py:123
+msgid ""
+"Input/Output error\n"
+"Maybe you don't have enough privileges?"
+msgstr ""
+"Input/Output error\n"
+"\n"
+"Maybe you don't have enough privileges?\n"

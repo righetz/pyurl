@@ -1,0 +1,87 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-07-20 23:55+CEST\n"
+"PO-Revision-Date: Tue Jul 21 2015 11:42:10 GMT+0200 (CEST)\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: Unknown\n"
+"Plural-Forms: nplurals=2; plural=n!=1\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=cp1252\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Loco-Source-Locale: it_IT\n"
+"Generated-By: pygettext.py 1.5\n"
+"X-Loco-Parser: loco_parse_po\n"
+"X-Loco-Target-Locale: zz_ZZ\n"
+"X-Generator: Loco - https://localise.biz/"
+
+#: pyurl.py:16
+msgid "Write output to file"
+msgstr "Scrive l'output nel file specificato\n"
+
+#: pyurl.py:17
+msgid "Include request headers"
+msgstr "Include gli headers della richiesta"
+
+#: pyurl.py:18
+msgid "Define target URL"
+msgstr "Definisce l'URL"
+
+#: pyurl.py:19
+msgid "Http POST data between quotation marks"
+msgstr "I dati Http POST vanno inseriti tra doppi apici\n"
+
+#: pyurl.py:20
+msgid "Show Http code"
+msgstr "Mostra il codice Http"
+
+#: pyurl.py:21
+msgid "Set custom user agent"
+msgstr "Specifica un user agent personalizzato"
+
+#: pyurl.py:22
+msgid "headers only"
+msgstr "Mostra solamente gli headers della richiesta (ignora l'opzione [-i])"
+
+#: pyurl.py:73
+#, c-format
+msgid ""
+"Could not resolve host %s\n"
+"Check your connection"
+msgstr ""
+"%s non raggiungibile\n"
+"Controlla la connessione\n"
+
+#: pyurl.py:85
+msgid "Specify every POST input as \"key=value\" "
+msgstr "Il formato dei dati POST e': \"chiave=valore\""
+
+#: pyurl.py:96 pyurl.py:110
+#, c-format
+msgid ""
+"Http code: %d\n"
+"\n"
+" "
+msgstr ""
+"Codice Http: %d\n"
+"\n"
+" "
+
+#: pyurl.py:119
+msgid "Specified directory does not exists"
+msgstr "La directory specificata non esiste\n"
+
+#: pyurl.py:121
+msgid "Target path is a directory, include file name"
+msgstr "Il percorso specificato e' una directory, aggiungi il nome del file"
+
+#: pyurl.py:123
+msgid ""
+"Input/Output error\n"
+"Maybe you don't have enough privileges?"
+msgstr ""
+"Errore di Input/Output\n"
+"Controlla di avere sufficienti permessi di scrittura sul file system\n"
